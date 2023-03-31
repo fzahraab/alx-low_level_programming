@@ -1,0 +1,1 @@
+strings language c 
