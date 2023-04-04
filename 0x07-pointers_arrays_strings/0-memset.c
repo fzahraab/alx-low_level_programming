@@ -1,23 +1,47 @@
 #include "main.h"
+
 /**
- * _memset - fill a block of memory with a specific value
- * @s: starting address of memory to be filled
- * @b: the desired value
- * @n: number of bytes to be changed
- *
- * Return: changed array with new value for n bytes
+ * _memset - function that fills memory with a constant byte.
+ * @s: pointer to memory area
+ * @b: constant value
+ * @n: number of bytes to fill
+ * Return: memory area
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i = 0;
 
-	for (; n > 0; i++)
+	int size = n;
+
+	if (size > 0)
 	{
-		s[i] = b;
-		n--;
+		int i;
+
+		for (i = 0; i < size; i++)
+			s[i] = b;
 	}
+
 	return (s);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
